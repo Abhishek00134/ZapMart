@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+body {
+  background-color: #d2d4c8;
+}
+.logo img {
+  width: 187px;
+}
+.logo {
+  margin: 3.8px 0 0 154px;
+}
+.login {
+  width: 484px;
+  height: 600px;
+  color: #fff;
+  margin: 48px 0 0 518px;
+  background-color: #1d3557;
+}
+.login h1 {
+  padding: 51px 0 0 65px;
+}
+.input_name {
+  margin: 25px 0 0 66.3px;
+  cursor: text;
+}
+.input_name input {
+  width: 349px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #edf5fc;
+  color: black;
+  border: none;
+  font-size: 16px;
+  padding: 0 0 0 12px;
+}
+.input_name input:hover {
+  border: 1px solid #b3b3b3;
+}
+.input_password {
+  margin: 17px 0 0 66.3px;
+}
+.input_password input {
+  width: 349px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #edf5fc;
+  color: black;
+  border: none;
+  padding: 0 0 0 12px;
+  font-size: 16px;
+}
+.input_password input:hover {
+  border: 1px solid #b3b3b3;
+}
+/* .input_password label{
+    position: absolute;
+    top: 40% ;
+    left: 39%;
+    color: #8c8c8c;
+} */
+.signbtn {
+  margin: 20px 0 0 66.8px;
+}
+.signbtn button {
+  width: 359px;
+  height: 43px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #e50914;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+}
+.signbtn button:hover {
+  background-color: #9b060e;
+}
+#or {
+  margin: 17px 0 0 231px;
+  font-size: 15px;
+}
+.codebtn {
+  margin: 15px 0 0 66.8px;
+}
+.codebtn button {
+  width: 359px;
+  height: 43px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #a39ba8;
+  opacity: 3px;
+  /* background: rgba(0,0,0,0.75); */
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+.codebtn button:hover {
+  background-color: #333;
+}
+.forgotPass {
+  margin: 16.2px 0 0 175.8px;
+  font-size: 16px;
+}
+.forgotPass a {
+  text-decoration: none;
+  color: #fff;
+  text-decoration: underline;
+}
+.remember input[type="checkbox"] {
+  transform: scale(1.5);
+}
+.remember {
+  margin: 23px 0 0 70px;
+  font-size: 15.7px;
+}
+.remember label {
+  margin-left: 8px;
+}
+#newUser {
+  margin: 20px 0 0 67px;
+}
+.description {
+  width: 362px;
+  font-size: 13px;
+  margin: 20px 0 0 67px;
+}
+#learn {
+  margin: 10px 0 0 67px;
+  font-size: 13px;
+}
+#learn a {
+  color: #0080ff;
+}
+span:hover {
+  text-decoration: underline;
+}

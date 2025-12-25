@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZapMart Cart</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- <nav class="navbar">
+  <div class="logo"><h2><span class="orange">ZAP</span>MART</h2></div>
+  <a href="home.html" class="cart">Home</a>
+</nav> -->
+   <nav class="navbar">
+      <div class="logo">
+        <a href="home.html"><h2><span class="orange">ZAP</span>MART</h2></a>
+      </div>
+      <!-- <ul class="links">
+        <li><a href="">Men</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">Kids</a></li>
+        <li><a href="">Beauty</a></li>
+      </ul> -->
+      <div class="search-bar">
+        <input
+          type="search"
+          name="search"
+          class="search"
+          placeholder="Search "
+        />
+      </div>
+      <div class="search-icon">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+      <a class="login" href="login.html">Login</a>
+      <!-- <i class="fa-solid fa-cart-shopping" id="cart-icon"></i> -->
+      <a href="home.html" class="home">Home</a>
+    </nav>
+
+<div class="cart-container">
+    <h3 id="head">Your Cart</h3>
+  <div class="left">
+      <div id="empty-box" class="empty-message" style="display:none;">
+          <h2>Your Cart is Empty</h2>
+          <a href="home.html">Shop Now</a>
+        </div>
+        
+        <div id="cart-items"></div>
+        
+    </div>
+    
+    <div class="right">
+        <div class="price-box">
+            <h3>PRICE DETAILS</h3>
+            <div class="row"><span>Price (<span id="item-count">0</span> items)</span><span id="price">₹0</span></div>
+            <div class="row"><span>Discount</span><span id="discount" class="green">-₹0</span></div>
+            <div class="row"><span>Delivery</span><span id="delivery">Free</span></div>
+            <hr>
+            <div class="row total"><b>Total Amount</b><b id="total">₹0</b></div>
+            <p class="save-text" id="save-text"></p>
+        </div>
+        <div class="bottom-bar">
+            <button id="place-order">PLACE ORDER</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- <div class="bottom-bar">
+  <button id="place-order">PLACE ORDER</button>
+</div> -->
+
+<script src="cart.js"></script>
+</body>
+</html>

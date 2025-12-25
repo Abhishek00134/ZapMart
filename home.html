@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZapMart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="home.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="home.html"><h2><span class="orange">ZAP</span>MART</h2></a>
+      </div>
+     <ul class="links">
+
+  <li class="dropdown">
+    <a href="#">Men</a>
+    <div class="dropdown-menu">
+      <p>T-Shirts</p>
+      <p>Shirts</p>
+      <p>Jeans</p>
+      <p>Jackets</p>
+      <p>Shoes</p>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#">Women</a>
+    <div class="dropdown-menu">
+      <p>Kurtis</p>
+      <p>Tops</p>
+      <p>Western Wear</p>
+      <p>Beauty Products</p>
+      <p>Shoes</p>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#">Kids</a>
+    <div class="dropdown-menu">
+      <p>T-Shirts</p>
+      <p>Shorts</p>
+      <p>Toys</p>
+      <p>Footwear</p>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="#">Beauty</a>
+    <div class="dropdown-menu">
+      <p>Makeup</p>
+      <p>Hair Care</p>
+      <p>Skin Care</p>
+      <p>Perfumes</p>
+    </div>
+  </li>
+
+</ul>
+
+      <div class="search-bar">
+        <input
+          type="search"
+          name="search"
+          class="search"
+          placeholder="Search "
+        />
+      </div>
+      <div class="search-icon">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+      <i class="fa-solid fa-user signin"></i>
+      <a class="login" href="login.html">Login</a>
+      <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+      <a href="cart.html" class="cart">Cart</a>
+    </nav>
+    <main>
+      <div class="slideshow-container">
+        <div class="slide">
+          <img
+            src="https://template.canva.com/EAFlT2Img50/1/0/1600w-wjBKt9zlQxc.jpg"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://template.canva.com/EAGuENE8ZSc/1/0/1600w-FQNgWAEN4WI.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://template.canva.com/EAGxWAn5ghQ/1/0/1600w-moaE3xUAnak.jpg"
+            alt="Image 3"
+          />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- product section -->
+      <div class="products">
+        <h2>Featured Products</h2>
+        
+        <div class="product-grid">
+          <div class="product"
+                data-id="1"
+                data-name="Wireless Headphones"
+                data-price="1999"
+                data-img="https://m.media-amazon.com/images/I/61TqvJ3mYPL._SL1500_.jpg">
+            <div class="img-wrap">
+              <img
+                src="https://m.media-amazon.com/images/I/61TqvJ3mYPL._SL1500_.jpg"
+                alt="Headphones"
+              />
+            </div>
+            <h3>Wireless Headphones</h3>
+            <p>Rs.1999</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product"
+                data-id="2"
+                data-name="Smart Watch"
+                data-price="799"
+                data-img="https://cdn1.smartprix.com/rx-iiXaQHa6a-w1200-h1200/iXaQHa6a.jpg">
+            <div class="img-wrap">
+              <img
+                src="https://cdn1.smartprix.com/rx-iiXaQHa6a-w1200-h1200/iXaQHa6a.jpg"
+                alt="Watch"
+              />
+            </div>
+            <h3>Smart Watch</h3>
+            <p>Rs.799</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product"
+                data-id="3"
+                data-name="Shoes"
+                data-price="999"
+                data-img="https://template.canva.com/EAEwmlEna_Y/2/0/1600w-noh15Z0NZfw.jpg">
+            <div class="img-wrap">
+              <img
+                src="https://template.canva.com/EAEwmlEna_Y/2/0/1600w-noh15Z0NZfw.jpg"
+                alt="Shoes"
+              />
+            </div>
+            <h3>Shoes</h3>
+            <p>Rs. 999</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product"
+                data-id="4"
+                data-name="Blender Pro"
+                data-price="5199"
+                data-img="https://m.media-amazon.com/images/I/51QiGDcNQnL.jpg">
+            <div class="img-wrap">
+              <img
+                src="https://m.media-amazon.com/images/I/51QiGDcNQnL.jpg"
+                alt="Blender"
+              />
+            </div>
+            <h3>Blender Pro</h3>
+            <p>Rs. 5199</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- mobiles section -->
+      <div class="mobiles">
+        <h2>SmartPhones</h2>
+        <div class="product-grid">
+          <div  class="mobile product"
+                data-id="5"
+                data-name="Galaxy Pixel 9"
+                data-price="5199"
+                data-img="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/b/p/t/-original-imahegqhrtpsz7sd.jpeg?q=60">
+            <div class="img-wrap">
+              <img
+                src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/b/p/t/-original-imahegqhrtpsz7sd.jpeg?q=60"
+                alt="Headphones"
+              />
+            </div>
+            <h3>Galaxy Pixel 9</h3>
+            <p>From Rs.62999</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="mobile product"
+                data-id="6"
+                data-name="Samsung Galaxy S25"
+                data-price="68999"
+                data-img="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/p/a/i/-original-imahfvuagzmf2ppf.jpeg?q=60">
+            <div class="img-wrap">
+              <img
+                src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/p/a/i/-original-imahfvuagzmf2ppf.jpeg?q=60"
+                alt="Watch"
+              />
+            </div>
+            <h3>Samsung Galaxy S25</h3>
+            <p>Just Rs.68,999*</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="mobile product"
+                data-id="7"
+                data-name="Vivo T4 Lite 5G"
+                data-price="9999"
+                data-img="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/6/9/t/-original-imahfkvfhpfaftmb.jpeg?q=60">
+            <div class="img-wrap">
+              <img
+                src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/6/9/t/-original-imahfkvfhpfaftmb.jpeg?q=60"
+                alt="Shoes"
+              />
+            </div>
+            <h3>Vivo T4 Lite 5G</h3>
+            <p>From Rs. 9,999</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="mobile product"
+                data-id="8"
+                data-name="Realme P3x 5G"
+                data-price="12499"
+                data-img="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/j/n/1/-original-imah9gtmya9qhqse.jpeg?q=60">
+            <div class="img-wrap">
+              <img
+                src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/j/n/1/-original-imah9gtmya9qhqse.jpeg?q=60"
+                alt="Blender"
+              />
+            </div>
+            <h3>Realme P3x 5G</h3>
+            <p>Just Rs. 12,499</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- top products -->
+      <div class="top-products">
+        <h2>Top Products for you</h2>
+        <div class="top-prod">
+          <div class="item">
+            <div class="item1">
+              <img
+                src="https://rukminim2.flixcart.com/image/240/240/xif0q/shoe/m/l/m/-original-imahddyzhk9mqnw6.jpeg?q=60"
+              />
+              <p class="iname1">PUMA, ADIDAS ...</p>
+              <p class="dis1">Min. 65% Off</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item2">
+              <img
+                src="https://rukminim1.flixcart.com/image/240/240/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=60"
+              />
+              <p class="iname2">Best of Action Toys</p>
+              <p class="dis2">Up to 70% Off</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item3">
+              <img
+                src="https://rukminim1.flixcart.com/image/240/240/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=60"
+              />
+              <p class="iname3">Geared Cycles</p>
+              <p class="dis3">Up to 70% Off</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item4">
+              <img
+                src="https://rukminim1.flixcart.com/image/240/240/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=60"
+              />
+              <p class="iname4">Remote Control Toys</p>
+              <p class="dis4">Up to 80% Off</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item5">
+              <div>
+                <img
+                  src="https://rukminim1.flixcart.com/image/240/240/xif0q/sunscreen/c/l/y/-original-imahaezaepemhgzy.jpeg?q=60"
+                />
+              </div>
+              <p class="iname5">Personal Care</p>
+              <p class="dis5">Up to 30% Off</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item6">
+              <img
+                src="https://rukminim1.flixcart.com/image/240/240/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=60"
+                alt="img"
+              />
+              <p class="iname6">Top Selling Stationery</p>
+              <p class="dis6">From Rs.49</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item7">
+              <img
+                src="https://rukminim1.flixcart.com/image/240/240/xif0q/pet-food/j/1/p/-original-imah4awybawa5r7s.jpeg?q=60"
+                alt="img"
+              />
+              <p class="iname7">Pet Food</p>
+              <p class="dis7">From Rs.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- featured brand -->
+      <div class="branded">
+        <h1>Featured Brands</h1>
+
+        <div class="Brands">
+          <div class="brand" id="brand1">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/900/560/image/b20f2c4827f2df94.jpeg?q=60"
+              alt="img"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/900/560/image/1a0423aff3059062.jpeg?q=60"
+              alt="img"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/900/560/image/06f4bc556319589c.jpeg?q=60"
+              alt="img"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/900/560/image/c8e2ab71451aba8d.jpeg?q=60"
+              alt="img"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/900/560/image/a808458bde4c8759.jpeg?q=60"
+              alt="img"
+            />
+          </div>
+          <div class="brand">
+            <img
+              src="https://rukminim1.flixcart.com/fk-p-flap/900/560/image/71f1a458b7d8f1a5.jpeg?q=60"
+              alt="img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer></footer>
+    </main>
+    <script>
+      document.addEventListener("click", function(e) {
+  if (e.target.tagName === "BUTTON" && e.target.innerText === "Add to Cart") {
+    
+    let product = e.target.closest(".product");
+    let data = {
+      id: Date.now(), // unique ID
+      name: product.dataset.name,
+      price: Number(product.dataset.price),
+      img: product.dataset.img,
+      qty: 1
+    };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let exist = cart.find(i => i.name === data.name);
+
+    if (exist) exist.qty++;
+    else cart.push(data);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Added to Cart!");
+  }
+});
+    </script>
+    <script src="home.js"></script>
+  </body>
+</html>
